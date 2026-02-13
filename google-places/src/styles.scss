@@ -1,0 +1,36 @@
+/* Global styles for Google Places dropdown (appended to <body> by directive) */
+
+.google-places-dropdown {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+
+  .google-places-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:hover,
+    &.selected {
+      background-color: #f5f5f5;
+    }
+
+    .google-places-main {
+      font-weight: 500;
+    }
+
+    .google-places-secondary {
+      color: #6c757d;
+      font-size: 13px;
+    }
+  }
+}
